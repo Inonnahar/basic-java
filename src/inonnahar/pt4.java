@@ -41,8 +41,22 @@ public class pt4 {
 		
 		System.out.print("Enter your input value ");
 		int input=scan.nextInt();
+		boolean data=true;
+		for(int i=2; i<input; i++) {
+			if(input%i==0) {
+				data=false;
+			}
+			System.out.println(data);
+		}
+		if(data==true) {
+			System.out.print(input+" it is a prime number");
+		}else {
+			System.out.print(input+" it is not a prime number");
+		}
 	
+		
 	
+		
 		
 	
 	}
